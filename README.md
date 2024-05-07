@@ -1,8 +1,25 @@
-# React + Vite
+# Brunel
+Brunel is a dynamic and user-friendly frontend project developed during my internship at Thence Company. It comprises three main pages:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+1. **Home Page**: The home page features a responsive navbar, a captivating hero section, and an accordion component for enhanced user experience.
 
-Currently, two official plugins are available:
+2. **Registration Page**: The registration page facilitates user sign-up with intuitive form fields and validation.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+3. **Success Page**: Upon successful registration or completion of an action, users are directed to the success page confirming successful submission.
+
+## Technologies Used
+
+- React.js
+- HTML
+- CSS
+- JavaScript
+- React Router 
+- Tailwind
+
+
+## Installation
+
+To install the dependencies, run the following command:
+
+```bash
+npm install
