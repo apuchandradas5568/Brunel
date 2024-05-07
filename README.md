@@ -1,4 +1,5 @@
 # Brunel
+
 Brunel is a dynamic and user-friendly frontend project developed during my internship at Thence Company. It comprises three main pages:
 
 1. **Home Page**: The home page features a responsive navbar, a captivating hero section, and an accordion component for enhanced user experience.
@@ -16,6 +17,10 @@ Brunel is a dynamic and user-friendly frontend project developed during my inter
 - React Router 
 - Tailwind
 
+
+
+## Live Preview:
+https://brunell.netlify.app/
 
 ## Installation
 
