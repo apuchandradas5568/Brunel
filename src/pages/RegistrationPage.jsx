@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Button from "../components/Button";
 import { Link, useNavigate } from "react-router-dom";
 
 export default function RegistrationPage() {
@@ -8,11 +7,10 @@ export default function RegistrationPage() {
     email: "",
   });
 
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   const [emailError, setEmailError] = useState("");
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -28,7 +26,7 @@ export default function RegistrationPage() {
     if (!emailRegex.test(formData.email)) {
       setEmailError("Please enter a valid email");
     } else {
-      navigate("/success")
+      navigate("/success");
     }
   };
 

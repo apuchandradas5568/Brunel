@@ -1,24 +1,20 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
-
-
+import { Link, useNavigate } from "react-router-dom";
 
 export default function SuccessPage() {
   const [seconds, setSeconds] = useState(5);
 
-  useEffect(()=>{
+  const navigate = useNavigate();
 
-    if (seconds === 0) {
-      window.location.href = "/";
-    }
+  useEffect(() => {
+    const reduceSeconds = () => {
+      const newTime = seconds - 1;
+      setSeconds(newTime);
+    };
 
-
-    const interval = setInterval(() => {
-      setSeconds(seconds => seconds - 1);
-    }, 1000);
-
-  }, [seconds])
-
+    setInterval(reduceSeconds, 1000);
+    seconds === 0 && navigate("/");
+  }, [seconds]);
 
   return (
     <div className="lg:w-[1400px] mx-auto">

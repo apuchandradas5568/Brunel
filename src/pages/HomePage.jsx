@@ -14,7 +14,7 @@ export default function HomePage() {
             </Link>
           </div>
           <div className="flex gap-4">
-            <Link to="/register" >
+            <Link to="/register">
               <Button outline={true} text={"Get Projects"} />
             </Link>
             <Link>
@@ -37,24 +37,35 @@ export default function HomePage() {
             <div>
               <img src="./hero-photo.png" alt="" />
 
-
               <div className="absolute w-60 bg-white shadow-md p-6 rounded-lg top-36 lg:left-32 left-20 ">
+                <img
+                  className="absolute -top-6 -left-4"
+                  src="./spark.png"
+                  alt=""
+                />
 
-                      <img className="absolute -top-6 -left-4" src="./spark.png" alt="" />
-
-                      <h1 className="text-6xl mb-4">40%</h1>
-                      <p className="text-[1rem] font-medium">Achieved reduction in project execution time by optimising team availability.</p>
+                <h1 className="text-6xl mb-4">40%</h1>
+                <p className="text-[1rem] font-medium">
+                  Achieved reduction in project execution time by optimising
+                  team availability.
+                </p>
               </div>
               <div className="absolute w-60 bg-white shadow-md px-6 py-4 rounded-full top-[26rem] lg:left-32 left-36 flex gap-4">
-                  <img className="object-contain" src="./flight.png" alt="" />
-                  <div>
-                    <h1 className="font-bold text-2xl">10DAYS</h1>
-                    <p>Staff Deployment</p>
-                  </div>
+                <img className="object-contain" src="./flight.png" alt="" />
+                <div>
+                  <h1 className="font-bold text-2xl">10 DAYS</h1>
+                  <p>Staff Deployment</p>
+                </div>
               </div>
               <div className="absolute bg-[#002E18]  w-60 shadow-md px-6 py-4 rounded-lg top-[26rem]  left-[35rem] text-white ">
-                    <p className="text-gray-400"> <span className="text-4xl text-white">$0.5</span> MILLION</p>
-                    <p className="text-gray-300 mt-3 font-medium">Reduced client expenses by saving on hiring and employee costs.</p>
+                <p className="text-gray-400">
+                  {" "}
+                  <span className="text-4xl text-white">$0.5 </span> MILLION
+                </p>
+                <p className="text-gray-300 mt-3 font-medium">
+                  Reduced client expenses by saving on hiring and employee
+                  costs.
+                </p>
               </div>
             </div>
             <div>
@@ -87,27 +98,38 @@ export default function HomePage() {
           <img src="./Union.png" alt="" />
         </div>
         <div className="  lg:w-[600px]">
-          <Accordion question="Do you offer freelancers?" answer="Yes, our platform connects you with skilled freelancers across various domains." />
-          <Accordion question="What’s the guarantee that I will be satisfied with the hired talent?" answer="We provide ratings, reviews, and portfolios of freelancers to help you make informed decisions. Additionally, we offer dispute resolution for quality assurance." />
-          <Accordion question="Can I hire multiple talents at once?" answer="Yes, you can hire multiple freelancers for different tasks simultaneously or collaborate with a team of freelancers for a comprehensive project." />
-          <Accordion question="Why should I not go to an agency directly?" answer="Freelancers often offer cost-effective solutions, flexibility, and specialized expertise compared to agencies. You have direct communication with freelancers, enabling better customization and control over your project." />
-          <Accordion question="Who can help me pick the right skillset and duration for me?" answer="Our platform provides tools and resources to help you assess your project needs. Additionally, our support team is available to assist you in choosing the right freelancers and project timelines based on your requirements." />
+          <Accordion
+            question="Do you offer freelancers?"
+            answer="Yes, our platform connects you with skilled freelancers across various domains."
+          />
+          <Accordion
+            question="What’s the guarantee that I will be satisfied with the hired talent?"
+            answer="We provide ratings, reviews, and portfolios of freelancers to help you make informed decisions. Additionally, we offer dispute resolution for quality assurance."
+          />
+          <Accordion
+            question="Can I hire multiple talents at once?"
+            answer="Yes, you can hire multiple freelancers for different tasks simultaneously or collaborate with a team of freelancers for a comprehensive project."
+          />
+          <Accordion
+            question="Why should I not go to an agency directly?"
+            answer="Freelancers often offer cost-effective solutions, flexibility, and specialized expertise compared to agencies. You have direct communication with freelancers, enabling better customization and control over your project."
+          />
+          <Accordion
+            question="Who can help me pick the right skillset and duration for me?"
+            answer="Our platform provides tools and resources to help you assess your project needs. Additionally, our support team is available to assist you in choosing the right freelancers and project timelines based on your requirements."
+          />
         </div>
       </div>
 
-
-
-    <footer className="flex font-medium text-gray-600 justify-between p-8 m-4 border rounded-[5rem]">
-      <div>
-        <p>&#169; Talup 2023. All rights reserved.</p>
-      </div>
-      <div className="flex gap-6 ">
-        <Link className="underline">Terms & Conditions</Link>
-        <Link className="underline" >Privacy Policy</Link>
-      </div>
-    </footer>
-
-
+      <footer className="flex font-medium text-gray-600 justify-between p-8 m-4 border rounded-[5rem]">
+        <div>
+          <p>&#169; Talup 2023. All rights reserved.</p>
+        </div>
+        <div className="flex gap-6 ">
+          <Link className="underline">Terms & Conditions</Link>
+          <Link className="underline">Privacy Policy</Link>
+        </div>
+      </footer>
     </div>
   );
 }
