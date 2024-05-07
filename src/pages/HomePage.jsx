@@ -82,7 +82,7 @@ export default function HomePage() {
               </div>
 
               <div className="lg:mt-32 mt-20">
-                <Button text={"Explore More"} />
+                <Button text={"Explore More"} arrow = {true} />
               </div>
             </div>
           </div>
